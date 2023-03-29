@@ -16,12 +16,35 @@
     margin-right: 60px !important;
 }
 
-.table-responsive{
+.lower_container{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* background-color: black; */
 }
-.table_content{
-
+.row{
     width: 90% !important;
+}
+.card{
+/* background-color: black !important; */
+    height: 40vh !important;
+}
+
+.card_weather{
+    display: flex;
+    /* background-color: brown; */
+}
+.card_weather_left{
+    /* background-color: aqua; */
+ width: 50%;
+ text-align: center;
+}
+.card_weather_right{
+    /* background-color: aqua; */
+ width: 50%;
+ text-align: center;
+}
+
+.span_custom{
+    /* margin-left: 40px; */
+    display:block;
 }

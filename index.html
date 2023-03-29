@@ -104,91 +104,68 @@
         
             <!-- lower table -->
             <h2 class="display-6 text-center mb-5 mt-5">Weather Of Other PLaces</h2>
-        
-            <div class="table-responsive ">
-              <table class="table text-center table_content">
-                <thead>
-                  <tr>
-                    <th ><th/>
-                    <th >TEMP<th/>
-                        <th >Feels_like<th/>
-                        <th ">Humidity<th/>
-                        <th ">Max_temp<th/>
-                        <th ">Min_temp<th/>
-                        <th ">CLOUD PCT<th/>
-                        <th ">Wind_speed<th/>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" class="text-start">PUNJAB</th>
-                    <th ></th>
-                    <td id="temp1"></td>
-                    <th></th>
-                    <td id="feels_like1"></td>
-                    <th></th>
-                    <td id="humidity3"></td>
-                    <th></th>
-                    <td id="max_temp1"></td>
-                    <th></th>
-                    <td id="min_temp1"></td>
-                    <th></th>
-                    <td id="cloud_pct1"></td>
-                    <th></th>
-                    <td id="wind_speed3"></td>
-                    
-                  </tr>
-                  
-                </tbody>
-        
-                <tbody>
-                  <tr>
-                    <th scope="row" class="text-start">AMERICA</th>
-                    <th ></th>
-                    <td id="temp2"></td>
-                    <th></th>
-                    <td id="feels_like2"></td>
-                    <th></th>
-                    <td id="humidity4"></td>
-                    <th></th>
-                    <td id="max_temp2"></td>
-                    <th></th>
-                    <td id="min_temp2"></td>
-                    <th></th>
-                    <td id="cloud_pct2"></td>
-                    <th></th>
-                    <td id="wind_speed4"></td>
-                  </tr>
-                    
-                  <tr>
-                    <th scope="row" class="text-start">RUSSIA</th>
-                    <th ></th>
-                    <td id="temp3"></td>
-                    <th></th>
-                    <td id="feels_like3"></td>
-                    <th></th>
-                    <td id="humidity5"></td>
-                    <th></th>
-                    <td id="max_temp3"></td>
-                    <th></th>
-                    <td id="min_temp3"></td>
-                    <th></th>
-                    <td id="cloud_pct3"></td>
-                    <th></th>
-                    <td id="wind_speed5"></td>
-                 </tr>
-                </tbody>
-              </table>
+
+            <div class="lower_container">
+              <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">AMERICA</h5>
+
+                      <div class="card_weather">
+                        <div class="card_weather_left">
+                          <span id="temp1" class="span_custom">TEMP : </span>
+                          <span id="feels_like1" class="span_custom">FEELS LIKE : </span>
+                          <span id="max_temp1" class="span_custom">MAX-TEMP : </span>
+                          <span id="min_temp1" class="span_custom">MIN-TEMP : </span>
+                        </div>
+                        <div class="card_weather_right">
+                          <span id="wind_speed3" class="span_custom">WIND SPEED : </span>
+                          <span id="wind_degrees1" class="span_custom">MIN-TEMP : </span>
+                          <span id="humidity3" class="span_custom">HUMIDITY : </span>
+                          <span id="cloud_pct1" class="span_custom">CLOUD-PCT : </span>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">RUSSIA</h5>
+                      
+                        <div class="card_weather">
+                          <div class="card_weather_left">
+                            <span id="temp2" class="span_custom">TEMP : </span>
+                            <span id="feels_like2" class="span_custom">FEELS LIKE : </span>
+                            <span id="max_temp2" class="span_custom">MAX-TEMP : </span>
+                            <span id="min_temp2" class="span_custom">MIN-TEMP : </span>
+                          </div>
+                          <div class="card_weather_right">
+                            <span id="wind_speed4" class="span_custom">WIND SPEED : </span>
+                            <span id="wind_degrees2" class="span_custom">MIN-TEMP : </span>
+                            <span id="humidity4" class="span_custom">HUMIDITY : </span>
+                            <span id="cloud_pct2" class="span_custom">CLOUD-PCT : </span>
+  
+                          </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </main>
-      </div>
+            
+        
+           
 
 
 
 
 
     
-
+     <div style="height:100vh;"></div>
     <!-- normal js -->
     <script src="script.js"></script>
     <!-- bootstrap js -->
