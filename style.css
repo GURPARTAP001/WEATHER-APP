@@ -3,8 +3,32 @@
     padding: 0;
 }
 
+.nav_custom{
+    background-image: linear-gradient(135deg, #5EFCE8 10%, #736EFE 100%);
+}
+
+.search_custom{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px ;
+    /* height: 10vh; */
+}
+.search_input_custom{
+    width: 50% !important;
+    background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+}
+.search_btn_custom{
+    /* color: wheat !important; */
+    background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%);
+}
+
 .main_heading{
     margin-bottom: 50px;
+}
+
+#cityname{
+    text-decoration: underline red;
 }
 .card_container{
     margin-top: 60px;
@@ -21,30 +45,29 @@
     justify-content: center;
     /* background-color: black; */
 }
-.row{
-    width: 90% !important;
-}
-.card{
-/* background-color: black !important; */
-    height: 40vh !important;
+
+.row_custom{
+    width: 80%;
+    justify-content: space-evenly;  
 }
 
-.card_weather{
-    display: flex;
-    /* background-color: brown; */
-}
-.card_weather_left{
-    /* background-color: aqua; */
- width: 50%;
- text-align: center;
-}
-.card_weather_right{
-    /* background-color: aqua; */
- width: 50%;
- text-align: center;
+.card_body_custom{
+    padding: 5px !important; 
 }
 
-.span_custom{
-    /* margin-left: 40px; */
-    display:block;
+.lower_card_header{
+    font-size: 25px;
+    font-weight: 700;
+}
+.list-group-item{
+     padding: 5px !important;
+     font-size: 20px;
+     font-weight: 400;
+}
+
+@media screen and (max-width:577px) {
+    .row_custom{
+        width: 100% ;
+    }
+    
 }

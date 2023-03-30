@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--navbar  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav_custom">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">WEATHER APP</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,14 +39,16 @@
                 <a class="nav-link ">USAGE GUIDE</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" id="city" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success " id="submit_btn" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
 
+      <!-- search bar -->
+      <form class="d-flex search_custom" role="search">
+        <input class="form-control me-2 search_input_custom" id="city" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light search_btn_custom" id="submit_btn" type="submit">Search</button>
+      </form>
       <!-- CARD COINTAINER -->
       <div class="card_container">
         <h1 class=" text-center main_heading">WEATHER OF <span id="cityname"></span></h1>
@@ -103,53 +105,49 @@
             </div>
         
             <!-- lower table -->
-            <h2 class="display-6 text-center mb-5 mt-5">Weather Of Other PLaces</h2>
+            <h1 class=" text-center mb-5 mt-5 ">WEATHER WORLD WIDE</h1>
 
+            <!-- card columm -->
             <div class="lower_container">
-              <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">AMERICA</h5>
+              <div class="row row_custom">
+                <div class="col-sm-6 mb-3 mb-sm-0  ">
+                  <div class="card ">
+                    <div class="card-body card_body_custom">
 
-                      <div class="card_weather">
-                        <div class="card_weather_left">
-                          <span id="temp1" class="span_custom">TEMP : </span>
-                          <span id="feels_like1" class="span_custom">FEELS LIKE : </span>
-                          <span id="max_temp1" class="span_custom">MAX-TEMP : </span>
-                          <span id="min_temp1" class="span_custom">MIN-TEMP : </span>
+                      <div class="card_custom" >
+                        <div class="card-header text-center lower_card_header">
+                          AMERICA
                         </div>
-                        <div class="card_weather_right">
-                          <span id="wind_speed3" class="span_custom">WIND SPEED : </span>
-                          <span id="wind_degrees1" class="span_custom">MIN-TEMP : </span>
-                          <span id="humidity3" class="span_custom">HUMIDITY : </span>
-                          <span id="cloud_pct1" class="span_custom">CLOUD-PCT : </span>
-
-                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item text-center" id="temp1">TEMP : </li>
+                          <li class="list-group-item text-center" id="feels_like1">FEELS LIKE : </li>
+                          <li class="list-group-item text-center" id="max_temp1" >MAX-TEMP : </li>
+                          <li class="list-group-item text-center" id="min_temp1">MIN-TEMP : </li>
+                          <li class="list-group-item text-center" id="humidity3">HUMIDITY : </li>
+                          <li class="list-group-item text-center" id="wind_speed3">WIND SPEED : </li>
+                        </ul>
                       </div>
+                    
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6  ">
                   <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">RUSSIA</h5>
-                      
-                        <div class="card_weather">
-                          <div class="card_weather_left">
-                            <span id="temp2" class="span_custom">TEMP : </span>
-                            <span id="feels_like2" class="span_custom">FEELS LIKE : </span>
-                            <span id="max_temp2" class="span_custom">MAX-TEMP : </span>
-                            <span id="min_temp2" class="span_custom">MIN-TEMP : </span>
-                          </div>
-                          <div class="card_weather_right">
-                            <span id="wind_speed4" class="span_custom">WIND SPEED : </span>
-                            <span id="wind_degrees2" class="span_custom">MIN-TEMP : </span>
-                            <span id="humidity4" class="span_custom">HUMIDITY : </span>
-                            <span id="cloud_pct2" class="span_custom">CLOUD-PCT : </span>
-  
-                          </div>
+                    <div class="card-body card_body_custom">
+
+                      <div class="card_custom" >
+                        <div class="card-header text-center lower_card_header">
+                          RUSSIA
                         </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item text-center" id="temp2">TEMP : </li>
+                          <li class="list-group-item text-center" id="feels_like2">FEELS LIKE : </li>
+                          <li class="list-group-item text-center" id="max_temp2" >MAX-TEMP : </li>
+                          <li class="list-group-item text-center" id="min_temp2">MIN-TEMP : </li>
+                          <li class="list-group-item text-center" id="humidity4">HUMIDITY : </li>
+                          <li class="list-group-item text-center" id="wind_speed4">WIND SPEED : </li>
+                        </ul>
+                      </div>
                       
                     </div>
                   </div>
